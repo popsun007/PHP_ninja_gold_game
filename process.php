@@ -16,7 +16,7 @@ else if ((isset($_POST['action']))&&($_POST['action'] === 'house')){
 }
 else if ((isset($_POST['action']))&&($_POST['action'] === 'casino')){
 	
-	if(rand(0,1)){
+	if(rand(1,100)<=70){
 		$golds = rand(0,50);
 		$_SESSION['total'] += $golds;
 	}
